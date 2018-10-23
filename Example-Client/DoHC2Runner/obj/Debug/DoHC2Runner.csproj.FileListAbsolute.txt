@@ -1,0 +1,9 @@
+C:\Users\dtm\source\repos\DoHC2Runner\DoHC2Runner\bin\Debug\DoHC2Runner.exe.config
+C:\Users\dtm\source\repos\DoHC2Runner\DoHC2Runner\bin\Debug\DoHC2Runner.exe
+C:\Users\dtm\source\repos\DoHC2Runner\DoHC2Runner\bin\Debug\DoHC2Runner.pdb
+C:\Users\dtm\source\repos\DoHC2Runner\DoHC2Runner\obj\Debug\DoHC2Runner.csprojAssemblyReference.cache
+C:\Users\dtm\source\repos\DoHC2Runner\DoHC2Runner\obj\Debug\DoHC2Runner.csproj.CoreCompileInputs.cache
+C:\Users\dtm\source\repos\DoHC2Runner\DoHC2Runner\obj\Debug\DoHC2Runner.exe
+C:\Users\dtm\source\repos\DoHC2Runner\DoHC2Runner\obj\Debug\DoHC2Runner.pdb
+C:\Users\dtm\source\repos\DoHC2Runner\DoHC2Runner\bin\Debug\Newtonsoft.Json.xml
+C:\Users\dtm\source\repos\DoHC2Runner\DoHC2Runner\obj\Debug\DoHC2Runner.csproj.CopyComplete

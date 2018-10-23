@@ -1,0 +1,2 @@
+# start the External C2 server and bind to 0.0.0.0:2222
+externalc2_start("0.0.0.0", 2222);

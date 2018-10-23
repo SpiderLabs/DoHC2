@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\ExternalC2\BeaconId.cs" Link="BeaconId.cs" />
+    <Compile Include="..\ExternalC2\Channels\BeaconChannel.cs" Link="Channels\BeaconChannel.cs" />
+    <Compile Include="..\ExternalC2\Channels\SocketChannel.cs" Link="Channels\SocketChannel.cs" />
+    <Compile Include="..\ExternalC2\Channels\WebChannel.cs" Link="Channels\WebChannel.cs" />
+    <Compile Include="..\ExternalC2\Channels\WebSocketChannel.cs" Link="Channels\WebSocketChannel.cs" />
+    <Compile Include="..\ExternalC2\Connectors\BaseConnector.cs" Link="Connectors\BaseConnector.cs" />
+    <Compile Include="..\ExternalC2\Connectors\BeaconConnector.cs" Link="Connectors\BeaconConnector.cs" />
+    <Compile Include="..\ExternalC2\Connectors\SocketConnector.cs" Link="Connectors\SocketConnector.cs" />
+    <Compile Include="..\ExternalC2\Frames\FrameType.cs" Link="Frames\FrameType.cs" />
+    <Compile Include="..\ExternalC2\Frames\WebSocketFrame.cs" Link="Frames\WebSocketFrame.cs" />
+    <Compile Include="..\ExternalC2\Interfaces\IC2Channel.cs" Link="Interfaces\IC2Channel.cs" />
+    <Compile Include="..\ExternalC2\Interfaces\IC2Connector.cs" Link="Interfaces\IC2Connector.cs" />
+    <Compile Include="..\ExternalC2\SocketC2.cs" Link="SocketC2.cs" />
+    <Compile Include="..\ExternalC2\WebC2.cs" Link="WebC2.cs" />
+    <Compile Include="..\ExternalC2\WebSocketC2.cs" Link="WebSocketC2.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Channels\" />
+    <Folder Include="Connectors\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Frames\" />
+  </ItemGroup>
+
+</Project>
