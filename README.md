@@ -60,7 +60,7 @@ Python DNS server based on [ACME DNS Server](https://github.com/pawitp/acme-dns-
 
 ```csharp
 	DoHC2 doh = new DoHC2();
-	doh.Configure("<INPUTDOMAIN>","<OUTPUTDOMAIN>","<DoH Hostname i.e. https://dns.google.com/resolve or https://dns.example.org/dns-query");
+	doh.Configure("<INPUTDOMAIN>","<OUTPUTDOMAIN>","<DoH URI i.e. https://dns.google.com/resolve or https://dns.example.org/dns-query");
 	doh.Go();
 ```
 
