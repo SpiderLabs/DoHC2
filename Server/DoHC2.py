@@ -205,7 +205,7 @@ def outputHandler(query):
         max = 255
         data_items = [alldata[i:i+max] for i in range(0, len(alldata), max)]
 
-        max_records = 5
+        max_records = 1
         record = 0
 
         while record < max_records:
