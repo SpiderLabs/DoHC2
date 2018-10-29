@@ -80,7 +80,7 @@ namespace ExternalC2
         /// <summary>
         ///     Configuration function for DotNetToJScript and Unit Tests
         ///     To use with JScript:
-        ///     o.Configure('send.example.org','receive.example.org','doh-provider.example.org');
+        ///     o.Configure('send.example.org','receive.example.org','https://doh-provider.example.org/resolve');
         ///     o.Go()
         /// </summary>
         /// <param name="ipAddr"></param>

@@ -11,6 +11,8 @@ This project was released on October 23rd 2018 at [Mitre ATT&CKcon](https://www.
 Slides:
 [Playing Devil’s Advocate to Security Initiatives with ATT&CK](Mitre_Attackcon_Playing_Devils_Advocate_With_Attack_1.0.pdf)
 
+Blog Artile:
+[DOH! DNS Over HTTPS Poses Possible Risks to Enterprises](https://www.trustwave.com/Resources/SpiderLabs-Blog/DOH!-DNS-Over-HTTPS-Poses-Possible-Risks-to-Enterprises/)
 
 ## Diagram
 
@@ -29,7 +31,7 @@ Slides:
 9. Change INPUTDOMAIN and OUTPUTDOMAIN in DoHC2.py. Change encryption key/IV - this is used to encrypt the path from Teamserver-->Client Only (Encrypts Stager). 
 10. Launch python3 DNS server.
 11. Build ExternalC2 library. Change encryption key/IV in DoHChannel.cs to match python3 server. 
-12. Configure and launch DoHC2() as below being sure to set INPUTDOMAIN, OUTPUTDOMAIN and a [DoH provider](https://github.com/curl/curl/wiki/DNS-over-HTTPS).
+12. Configure and launch DoHC2() as below being sure to set INPUTDOMAIN, OUTPUTDOMAIN and a [DoH provider](https://github.com/curl/curl/wiki/DNS-over-HTTPS) in format 'https://resolver.example.org/dns-query'.
 
 ## Server
 
@@ -58,7 +60,7 @@ Python DNS server based on [ACME DNS Server](https://github.com/pawitp/acme-dns-
 
 ```csharp
 	DoHC2 doh = new DoHC2();
-	doh.Configure("<INPUTDOMAIN>","<OUTPUTDOMAIN>","<DoH Hostname i.e. dns.google.com>");
+	doh.Configure("<INPUTDOMAIN>","<OUTPUTDOMAIN>","<DoH Hostname i.e. https://dns.google.com/resolve or https://dns.example.org/dns-query");
 	doh.Go();
 ```
 

@@ -64,7 +64,7 @@ namespace ExternalC2.Channels
         {
             List<string> txtResponses = new List<string>();
 
-            string url = String.Format("https://{0}/resolve?name={1}&type=TXT", dohResolver, hostname);
+            string url = String.Format("{0}?name={1}&type=TXT", dohResolver, hostname);
 
             Console.WriteLine("[URL] {0}", url);
 
