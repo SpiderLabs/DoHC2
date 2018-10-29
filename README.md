@@ -28,7 +28,7 @@ Blog Article:
 6. Create an A record on your domain to point to the teamserver/DNS server IP i.e. [A] entry.example.org -> 000.000.000.000
 7. Create an NS record to point to the A record for send channel (INPUTDOMAIN) i.e. [NS] send.example.org -> entry.example.org.
 8. Create an NS record to point to the A record for receive channel (OUTPUTDOMAIN) i.e. [NS] receive.example.org -> entry.example.org.
-9. Change INPUTDOMAIN and OUTPUTDOMAIN in DoHC2.py. Change encryption key/IV - this is used to encrypt the path from Teamserver-->Client Only (Encrypts Stager). 
+9. Change INPUTDOMAIN and OUTPUTDOMAIN in DoHC2.py. Change encryption key/IV - this is used to encrypt the path from Teamserver-->Client Only (Encrypts Stager). Change max_records from 1 depending on DoH provider, some providers reorder records returned which is not currently handled. Max 5 works well with DNS server.
 10. Launch python3 DNS server.
 11. Build ExternalC2 library. Change encryption key/IV in DoHChannel.cs to match python3 server. 
 12. Configure and launch DoHC2() as below being sure to set INPUTDOMAIN, OUTPUTDOMAIN and a [DoH provider](https://github.com/curl/curl/wiki/DNS-over-HTTPS) in format 'https://resolver.example.org/dns-query'.
