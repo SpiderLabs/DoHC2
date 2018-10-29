@@ -11,7 +11,7 @@ This project was released on October 23rd 2018 at [Mitre ATT&CKcon](https://www.
 Slides:
 [Playing Devil’s Advocate to Security Initiatives with ATT&CK](Mitre_Attackcon_Playing_Devils_Advocate_With_Attack_1.0.pdf)
 
-Blog Artile:
+Blog Article:
 [DOH! DNS Over HTTPS Poses Possible Risks to Enterprises](https://www.trustwave.com/Resources/SpiderLabs-Blog/DOH!-DNS-Over-HTTPS-Poses-Possible-Risks-to-Enterprises/)
 
 ## Diagram
