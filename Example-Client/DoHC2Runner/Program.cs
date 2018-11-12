@@ -15,7 +15,7 @@ namespace DoHC2Runner
             // Send Channel Hostname
             // Receive Channel Hostname
             // DNS over HTTPS (DoH) Resolver
-            doh.Configure("send.example.org","receive.example.org","dns.google.com");
+            doh.Configure("send.example.org","receive.example.org","https://doh.example.org/resolve");
             doh.Go();
         }
     }
