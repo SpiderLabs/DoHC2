@@ -59,12 +59,16 @@ db.close()
 
 def encrypt(plain):
     try:
+        count = len(plain)%16
+        if count != 0:
+            plain = plain + (b' '*(16-count))
         # Change the below Key and IV below are random examples
         key = base64.b64decode("hRUuLu7B61rgSWd/kQEGFjK7367/9gn+Mucl6eHCnHw=")
         iv = base64.b64decode("LpriMy1kPv1G1HYkO0kmHQ==")
         encryption_suite = AES.new(key, AES.MODE_CBC, iv)
         cipher_text = encryption_suite.encrypt(plain)
     except:
+        traceback.print_exc()
         cipher_text = b""
     return cipher_text
 
@@ -281,10 +285,13 @@ class DNSHandler(socketserver.BaseRequestHandler):
 
         answers_response = []
 
-        if INPUTDOMAIN in query:
-            answers_response = inputHandler(query)
-        if OUTPUTDOMAIN in query:
-            answers_response = outputHandler(query)
+        try:
+            if INPUTDOMAIN in query:
+                answers_response = inputHandler(query)
+            if OUTPUTDOMAIN in query:
+                answers_response = outputHandler(query)
+        except:
+            answers_response.append("Error")
 
         # Make response (note: we don't actually care about the questions, just return our canned response)
         response = io.BytesIO()
