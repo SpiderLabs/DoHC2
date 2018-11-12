@@ -94,3 +94,6 @@ GNU General Public License for more details.
 * [Python Shared File C2 - (Python Server)](https://github.com/outflanknl/external_c2)
 * [Python External_C2_Framework - (Python Server)](https://github.com/Und3rf10w/external_c2_framework)
 * [DNSExfiltrator - Python Server](https://github.com/Arno0x/DNSExfiltrator)
+
+## Contributers
+* [xinhaojing](https://github.com/xinhaojing) - Server Issue #1
