@@ -1,3 +1,5 @@
+:warning: *NOTE: This tool is no longer under active maintenance.*
+
 # DoHC2
 
 DoHC2 allows the ExternalC2 library from Ryan Hanson (https://github.com/ryhanson/ExternalC2) to be
